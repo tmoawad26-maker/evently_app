@@ -1,0 +1,11 @@
+{
+  "language": "Language",
+  "userName": "John Safwat",
+  "email": "JohnSafwat@gamil.com",
+  "arabic": "Arabic",
+  "anglish": "English",
+  "theme": "Theme",
+  "light": "Light",
+  "dark": "Dark",
+  "logout": "Logout"
+}

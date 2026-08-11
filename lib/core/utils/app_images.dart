@@ -33,7 +33,8 @@ class AppImages {
   /// Assets for imagesExhibitionDark
   /// assets/images/Exhibition_dark.png
   static const String imagesExhibitionDark = "assets/images/Exhibition_dark.png";
-
+    /// Assets for route images
+    static const String imagesRouteLogo = 'assets/images/route_image.png';
   /// Assets for imagesExhibitionLight
   /// assets/images/Exhibition_light.png
   static const String imagesExhibitionLight = "assets/images/Exhibition_light.png";
