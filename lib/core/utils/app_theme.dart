@@ -23,7 +23,9 @@ class AppTheme {
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.primaryLight,
       iconTheme: IconThemeData(color: AppColors.primaryLight),
-      titleTextStyle: TextStyle(color: AppColors.secondaryLight),
+      titleTextStyle: AppTextStyles.appBarTitle.copyWith(
+        color: AppColors.secondaryLight,
+      ),
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(bottomLeft: Radius.circular(60.r))
         ),
@@ -42,9 +44,8 @@ class AppTheme {
       titleTextStyle: AppTextStyles.textStyle20.copyWith(
         color: AppColors.onSurfaceLight,
       ),
-      leadingAndTrailingTextStyle: TextStyle(
+      leadingAndTrailingTextStyle: AppTextStyles.listLeading.copyWith(
         color: AppColors.titleColorLight,
-        fontSize: 30,
       ),
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
@@ -70,7 +71,9 @@ class AppTheme {
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.primaryDark,
       iconTheme: IconThemeData(color: AppColors.primaryDark),
-      titleTextStyle: TextStyle(color: AppColors.secondaryDark),
+      titleTextStyle: AppTextStyles.appBarTitle.copyWith(
+        color: AppColors.secondaryDark,
+      ),
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(bottomLeft: Radius.circular(60.r))
         ),
@@ -84,14 +87,13 @@ class AppTheme {
       ),
     ),
     listTileTheme: ListTileThemeData(
-      tileColor: Color(0xff002D8F),
+      tileColor: AppColors.surfaceDark,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       titleTextStyle: AppTextStyles.textStyle20.copyWith(
         color: AppColors.onPrimaryDark,
       ),
-      leadingAndTrailingTextStyle: TextStyle(
+      leadingAndTrailingTextStyle: AppTextStyles.listLeading.copyWith(
         color: AppColors.onPrimaryDark,
-        fontSize: 30,
       ),
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(

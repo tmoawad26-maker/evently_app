@@ -12,8 +12,15 @@ class ThemeProvider extends ChangeNotifier
    themeMode =  themeMode == ThemeMode.light ? ThemeMode.dark : ThemeMode.light;
     notifyListeners();
   }
-  changeTextMode(BuildContext context) {
-    textThemeMode = themeMode == ThemeMode.light ? AppLocalizations.of(context)!.light
+  void setTheme(ThemeMode mode) {
+    if (themeMode == mode) return;
+    themeMode = mode;
+    notifyListeners();
+  }
+
+  void changeTextMode(BuildContext context) {
+    textThemeMode = themeMode == ThemeMode.light
+        ? AppLocalizations.of(context)!.light
         : AppLocalizations.of(context)!.dark;
     notifyListeners();
   }

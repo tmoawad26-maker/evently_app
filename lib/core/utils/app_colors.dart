@@ -15,11 +15,19 @@ abstract class AppColors {
   static const Color unSelectNavButtonLight = Color(0xffB9B9B9);
   static const Color selectNavButtonLight = Color(0xff0E3A99);
   static const Color titleColorLight = Color(0xff457AED);
-
+  static const Color onboardingButton = Color(0xff001440);
+  static const Color onboardingCard = Color(0xff001440);
+  static const Color onboardingNextButton = Color(0xff457AED);
+  static const Color authInputBorder = Color(0xffEEEEEE);
+  static const Color authMutedLight = Color(0xff808080);
+  static const Color authInputFillLight = Color(0xffFFFFFF);
+  static const Color transparent = Color(0x00000000);
+  static const errorColor = Color(0xffFF3232);
   /// colors in dark theme
   static const Color primaryDark = Color(0xff457AED);
   static const Color onPrimaryDark = Color(0xffFFFFFF);
   static const Color secondaryDark = Color(0xffD6D6D6);
+  static const Color onboardingSubtitleDark = Color(0xffD6D6D6);
   static const Color surfaceDark = Color(0xff002D8F);
   static const Color onSurfaceDark = Color(0xffD6D6D6);
   static const Color scaffoldBackgroundColorDark = Color(0xff000F30);
@@ -29,4 +37,6 @@ abstract class AppColors {
   static const Color unSelectIconColorDark = Color(0xffB9B9B9);
   static const Color unSelectNavButtonDark = Color(0xffB9B9B9);
   static const Color selectNavButtonDark = Color(0xff457AED);
+  static const Color authTitleDark = Color(0xffFFFFFF);
+  static const Color successColor = Colors.lightGreen;
 }
