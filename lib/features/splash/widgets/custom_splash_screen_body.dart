@@ -1,7 +1,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:evently_app/core/utils/app_images.dart';
-import 'package:evently_app/core/utils/app_routes.dart';
+import 'package:evently_app/core/routing/routes.dart';
 import 'package:evently_app/features/splash/widgets/branding_widget.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -26,7 +27,7 @@ class CustomSplashScreenBody extends StatelessWidget {
           FadeInUp(
             delay: Duration(seconds: 2),
             onFinish: (direction) {
-              navigateToMainLayout(context);
+              navigateToOnBoardingScreen(context);
             },
             child: BrandingWidget()),
           SizedBox(height: 64.h,),
@@ -35,9 +36,14 @@ class CustomSplashScreenBody extends StatelessWidget {
 
   }
 
-  void navigateToMainLayout(BuildContext context) {
+  void navigateToOnBoardingScreen(BuildContext context) {
      Future.delayed(Duration(seconds: 1), () {
-      Navigator.pushReplacementNamed(context, AppRoutes.mainLayoutRoute);
+      if(!context.mounted) return;
+        if(FirebaseAuth.instance.currentUser == null){
+          Navigator.pushReplacementNamed(context, RouteName.onBoardingRoute);
+        }else {
+          Navigator.pushNamed(context, RouteName.mainLayoutRoute);
+        }
     });
   }
 }

@@ -1,6 +1,7 @@
 import 'package:evently_app/core/utils/app_colors.dart';
 import 'package:evently_app/core/utils/app_images.dart';
 import 'package:evently_app/core/utils/app_text_styles.dart';
+import 'package:evently_app/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -31,14 +32,14 @@ class ProfileHeaderWidget extends StatelessWidget {
         Column(
           children: [
             Text(
-              'John Safwat',
+              AppLocalizations.of(context)!.userName,
               style: AppTextStyles.textStyle20.copyWith(
                 color: AppColors.onPrimaryLight,
               ),
             ),
             SizedBox(height: 8.h),
             Text(
-              'JohnSafwat@gamil.com',
+              AppLocalizations.of(context)!.email,
               style: AppTextStyles.textStyle16.copyWith(
                 color: AppColors.onPrimaryLight,
               ),

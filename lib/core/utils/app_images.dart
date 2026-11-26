@@ -1,14 +1,22 @@
 // ignore_for_file: prefer_single_quotes
 class AppImages {
   AppImages._();
+
+  static const String googleIc = 'assets/images/google_ic.png';
+
+  static const String onBoardingCat = 'assets/images/on_boarding_dark_2.png';
+  static const String onBoardingDark1 = 'assets/images/on_boarding_dark_1.png';
+  static const String onBoardingPlanning = 'assets/images/on_boarding_dark_3.png';
+  static const String onBoardingSharing = 'assets/images/on_boarding_dark_4.png';
   
   /// Assets for imagesBeingCreative
-  /// assets/images/being-creative.png
-  static const String imagesBeingCreative = "assets/images/being-creative.png";
+  /// assets/images/on_boarding_light_1.png
+  static const String onBoardingLight1= "assets/images/on_boarding_light_1.png";
+  static const String onBoardingLight4 = 'assets/images/on_boarding_light_4.png';
 
   /// Assets for imagesBeingCreative (1)
-  /// assets/images/being-creative (1).png
-  static const String imagesBeingCreative1 = "assets/images/being-creative (1).png";
+  /// assets/images/on_boarding_light_3.png
+  static const String onBoardingLight3 = "assets/images/on_boarding_light_3.png";
 
   /// Assets for imagesBirthdayDark
   /// assets/images/Birthday_dark.png
@@ -40,8 +48,8 @@ class AppImages {
   static const String imagesExhibitionLight = "assets/images/Exhibition_light.png";
 
   /// Assets for imagesHotTrending
-  /// assets/images/hot-trending.png
-  static const String imagesHotTrending = "assets/images/hot-trending.png";
+  /// assets/images/hot-trending_light.png
+  static const String onBoardingLight2 = "assets/images/hot-trending_light.png";
 
   /// Assets for imagesMeetingDark
   /// assets/images/Meeting_dark.png
@@ -49,11 +57,11 @@ class AppImages {
   /// Assets for imagesEventlyLogo
   static const String imagesEventlyLogo = "assets/images/Evently_logo.png";
   /// Assets for imagesEventlyLogoDark
-  static const String imagesEventlyLogoDark = "assets\\images\\evently_logo_dark.png";
+  static const String imagesEventlyLogoDark = "assets/images/evently_logo_dark.png";
   /// Assets for brandLogo light
-  static const String imagesrouteLight = "assets/images/route_image_light.png";
+  static const String imagesRouteLight = "assets/images/route_image_light.png";
   /// Assets for brandLogo dark
-  static const String imagesrouteDark = "assets/images/route_image_dark.png";
+  static const String imagesRouteDark = "assets/images/route_image_dark.png";
   /// Assets for imagesMeetingLight
   /// assets/images/Meeting_light.png
   static const String imagesMeetingLight = "assets/images/Meeting_light.png";

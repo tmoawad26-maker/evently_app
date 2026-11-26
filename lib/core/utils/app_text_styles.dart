@@ -21,5 +21,18 @@ abstract class AppTextStyles {
     fontSize: 24,
     fontWeight: .w600,
   );
-  
+  static const TextStyle authTitle = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+  );
+  static const TextStyle authAction = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
+  );
+  static const TextStyle authBody = TextStyle(fontSize: 14);
+  static const TextStyle authButton = TextStyle(fontSize: 16);
+  static const TextStyle authDivider = TextStyle(fontSize: 13);
+  static const TextStyle authHint = TextStyle(fontSize: 12);
+  static const TextStyle appBarTitle = TextStyle(fontSize: 20);
+  static const TextStyle listLeading = TextStyle(fontSize: 30);
 }
