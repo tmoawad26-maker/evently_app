@@ -63,5 +63,8 @@
   "authTooManyRequests": "Too many failed attempts. Please try again later.",
   "authNetworkRequestFailed": "Network error. Check your internet connection.",
   "authRequiresRecentLogin": "Please log out and log back in before making this change.",
-  "authGenericError": "An authentication error occurred. Please try again."
+  "authGenericError": "An authentication error occurred. Please try again.",
+  "home": "Home",
+  "favourites": "Favourites",
+  "profile": "Profile"
 }

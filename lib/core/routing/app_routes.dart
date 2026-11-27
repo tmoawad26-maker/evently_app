@@ -2,6 +2,7 @@ import 'package:evently_app/core/routing/routes.dart';
 import 'package:evently_app/features/auth/screens/forgot_password_screen.dart';
 import 'package:evently_app/features/auth/screens/login_screen.dart';
 import 'package:evently_app/features/auth/screens/register_screen.dart';
+import 'package:evently_app/features/home/screens/home_screen.dart';
 import 'package:evently_app/features/main_layout/screens/main_layout.dart';
 import 'package:evently_app/features/onboarding/on_boarding_screen.dart';
 import 'package:evently_app/features/profile/profile_screen.dart';
@@ -24,6 +25,8 @@ class AppRoutes {
         return MaterialPageRoute(builder: (_) => RegisterScreen());
       case RouteName.mainLayoutRoute:
         return MaterialPageRoute(builder: (_) => MainLayout());
+      case RouteName.homeRoute:
+        return MaterialPageRoute(builder: (_) => HomeScreen());
       case RouteName.profileRoute:
         return MaterialPageRoute(builder: (_) => ProfileScreen());
       default:

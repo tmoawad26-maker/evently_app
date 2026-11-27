@@ -9,8 +9,11 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(toolbarHeight: 150.h, title: ProfileHeaderWidget()),
-      body: CustomProfileBody(),
+      appBar: AppBar(
+        toolbarHeight: 150.h,
+        title: const ProfileHeaderWidget(),
+      ),
+      body: const CustomProfileBody(),
     );
   }
 }

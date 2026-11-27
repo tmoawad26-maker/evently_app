@@ -29,22 +29,30 @@ class ProfileHeaderWidget extends StatelessWidget {
           ),
         ),
         SizedBox(width: 10.w),
-        Column(
-          children: [
-            Text(
-              AppLocalizations.of(context)!.userName,
-              style: AppTextStyles.textStyle20.copyWith(
-                color: AppColors.onPrimaryLight,
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                AppLocalizations.of(context)!.userName,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: AppTextStyles.textStyle20.copyWith(
+                  color: AppColors.onPrimaryLight,
+                ),
               ),
-            ),
-            SizedBox(height: 8.h),
-            Text(
-              AppLocalizations.of(context)!.email,
-              style: AppTextStyles.textStyle16.copyWith(
-                color: AppColors.onPrimaryLight,
+              SizedBox(height: 8.h),
+              Text(
+                AppLocalizations.of(context)!.email,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: AppTextStyles.textStyle16.copyWith(
+                  color: AppColors.onPrimaryLight,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ],
     );
