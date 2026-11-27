@@ -25,7 +25,7 @@ abstract class AppTextStyles {
     fontSize: 20,
     fontWeight: FontWeight.w600,
   );
-  static const TextStyle authAction = TextStyle(
+  static const TextStyle textStyle12SemiBold = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w600,
   );

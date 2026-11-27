@@ -215,4 +215,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get authGenericError => 'حدث خطأ في المصادقة. يرجى المحاولة مرة أخرى.';
+
+  @override
+  String get home => 'الصفحة الرئيسية';
+
+  @override
+  String get favourites => 'المفضلة';
+
+  @override
+  String get profile => 'الملف الشخصي';
 }

@@ -30,7 +30,7 @@ class CustomSmoothIndicator extends StatelessWidget {
                 ? (isDark ? AppColors.primaryDark : AppColors.primaryLight)
                 : (isDark
                     ? AppColors.unSelectNavButtonDark
-                    : AppColors.unSelectNavButtonLight),
+                    : AppColors.unSelectNavButtonDark),
             borderRadius: BorderRadius.circular(4.r),
           ),
         ),

@@ -218,4 +218,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get authGenericError =>
       'An authentication error occurred. Please try again.';
+
+  @override
+  String get home => 'Home';
+
+  @override
+  String get favourites => 'Favourites';
+
+  @override
+  String get profile => 'Profile';
 }

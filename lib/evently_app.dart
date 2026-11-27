@@ -1,6 +1,6 @@
 import 'package:evently_app/core/routing/app_routes.dart';
 import 'package:evently_app/core/routing/routes.dart';
-import 'package:evently_app/core/utils/app_theme.dart';
+import 'package:evently_app/core/theme/app_theme.dart';
 import 'package:evently_app/features/providers/language_provider.dart';
 import 'package:evently_app/features/providers/theme_provider.dart';
 import 'package:evently_app/l10n/app_localizations.dart';
@@ -26,8 +26,8 @@ class EventlyApp extends StatelessWidget {
           locale: Locale(languageProvider.lang),
         debugShowCheckedModeBanner: false,
         title: 'Evently',
-        theme: AppTheme.lightTheme,
-        darkTheme: AppTheme.darkTheme,
+        theme: AppTheme.light,
+        darkTheme: AppTheme.dark,
         themeMode: themeProvider.themeMode,
           onGenerateRoute: AppRoutes.onGenerateRoute,
           initialRoute: RouteName.splashRoute,

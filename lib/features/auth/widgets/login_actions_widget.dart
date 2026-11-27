@@ -27,7 +27,7 @@ class LoginForgotPasswordLink extends StatelessWidget {
         minimumSize: Size(0, 32.h),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
       ),
-      child: Text(label, style: AppTextStyles.authAction.copyWith(fontSize: 12.sp)),
+      child: Text(label, style: AppTextStyles.textStyle12SemiBold.copyWith(fontSize: 12.sp)),
     ),
   );
 }
@@ -92,7 +92,7 @@ class LoginSignupLink extends StatelessWidget {
             minimumSize: Size(0, 32.h),
             tapTargetSize: MaterialTapTargetSize.shrinkWrap,
           ),
-          child: Text(label, style: AppTextStyles.authAction.copyWith(fontSize: 12.sp)),
+          child: Text(label, style: AppTextStyles.textStyle12SemiBold.copyWith(fontSize: 12.sp)),
         ),
       ],
     ),

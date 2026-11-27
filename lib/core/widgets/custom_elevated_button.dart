@@ -15,18 +15,20 @@ class CustomElevatedButton extends StatelessWidget {
   final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
-    var width = MediaQuery.of(context).size.width;
-    return ElevatedButton(
-      onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-        backgroundColor: backgroundButton ?? AppColors.primaryLight,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        fixedSize: Size(width, 55.h),
-      ),
-      child: Text(
-        textButton,
-        style: AppTextStyles.textStyle20.copyWith(
-          color: AppColors.onPrimaryLight,
+    return SizedBox(
+      width: double.infinity,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: backgroundButton ?? AppColors.primaryLight,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          minimumSize: Size.fromHeight(55.h),
+        ),
+        child: Text(
+          textButton,
+          style: AppTextStyles.textStyle20.copyWith(
+            color: AppColors.onPrimaryLight,
+          ),
         ),
       ),
     );
